@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Alex Crider, 04/24/2024-->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Freelancer - Start Bootstrap Theme</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Internal JavaScript -->
+        <!--
+        <script type = "text/javascript">
+        function validateForm() {
+            let x1 = document.forms["contactForm"]["name"].value;
+            if (x1 == "") {
+                alert("Name must be filled in");
+                return false;
+            }
+            let x2 = document.forms["contactForm"]["email"].value;
+            if (x2 == "") {
+                alert("Email must be filled in");
+                return false;
+            }
+            let mailformat = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
+            if (!document.forms["contactForm"]["email"].value.match(mailformat))
+            {
+                alert("You have entered an invalid email address");
+                return false;
+            }
+            let x3 = document.forms["contactForm"]["phone"].value;
+            if (x3 == "") {
+                alert("Phone must be filled in");
+                return false;
+            }
+            let x4 = document.forms["contactForm"]["message"].value;
+            if (x4 == "") {
+                alert("Message must be filled in");
+                return false;
+            }
+        }
+        function getRadioValue(radio) {
+            alert("You selected " + radio.value);
+        }
+        function getCheckboxClick(checkbox) {
+            alert("You selected " + checkbox.value);
+        }
+        function getMenuSelection(menu) {
+            alert("You selected " + menu.value)
+        }
+        function getTextboxEntry(textbox) {
+            alert("You entered " + textbox.value)
+        }
+        </script> -->
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- CSS Styles added for CIS373 -->
+        <link href="css/cis373.css" rel="stylesheet" />
+        <style>
+        </style>
+    </head>
+    <body id="page-top">
+        <!-- Internal CSS -->
+        <style>
+            .caption {
+                caption-side: top;
+                text-align: center;
+                font-size: 35px;
+                color: darkred;
+            }
+            .center {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            table, th, td {
+                border: 1px solid black;
+                font-size: 25px;
+                padding: 10px;
+            }
+        </style>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">TGE</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#games">Games</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-0">The Grand Exchange</h1>
+                <br><br>
+                <!-- Masthead Avatar Image-->
+                <img class="masthead-avatar mb-5" src="C:\Users\Administrator\Desktop\MyWork\CIS373_WebDeveloper\startbootstrap_freelancer_gh_pages\assets\img\avataaars.png" alt="..." />
+                <br><br>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0">Website created by Alex Crider, Strayer University Student</p>
+            </div>
+        </header>
+        <!-- Portfolio Section-->
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="C:\Users\Administrator\Desktop\MyWork\CIS373_WebDeveloper\startbootstrap_freelancer_gh_pages\assets\img\portfolio\1.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="C:\Users\Administrator\Desktop\MyWork\CIS373_WebDeveloper\startbootstrap_freelancer_gh_pages\assets\img\portfolio\2.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="C:\Users\Administrator\Desktop\MyWork\CIS373_WebDeveloper\startbootstrap_freelancer_gh_pages\assets\img\portfolio\3.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 4-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="C:\Users\Administrator\Desktop\MyWork\CIS373_WebDeveloper\startbootstrap_freelancer_gh_pages\assets\img\portfolio\4.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 5-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="C:\Users\Administrator\Desktop\MyWork\CIS373_WebDeveloper\startbootstrap_freelancer_gh_pages\assets\img\portfolio\5.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 6-->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="C:\Users\Administrator\Desktop\MyWork\CIS373_WebDeveloper\startbootstrap_freelancer_gh_pages\assets\img\portfolio\6.png" alt="..." />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Games Section-->
+        <section class="page-section bg-info text-white mb-0" id="games">
+            <div class="container">
+                <!-- Games Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">Games</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Games Section Content-->
+                <div class="parent">
+                    <ul>
+                        <li><a href="https://store.epicgames.com/en-US/" alt="Epic Games"><span class="list-text-color">Epic Games</a></li>
+                        <li><a href="https://www.riotgames.com/en" alt="Riot Games"><span class="list-text-color">Riot Games</a></li>
+                        <li><a href="https://store.steampowered.com/" alt="Steam"><span class="list-text-color">Steam</a></li>
+                        <li><a href="https://freetrial.finalfantasyxiv.com/na?utm_source=google_search&utm_medium=dcpc_text&utm_campaign=ffxiv_awa_ffxiv_dwn_29649155_ft_evergreen_search_googlesem_desktop_download_na_fy24_lqa_lqa&utm_content=0_392156216&gclid=EAIaIQobChMIiNzWgMKIhgMVfwGtBh0ICgdoEAAYASAAEgL2X_D_BwE" alt="Final Fantasy XIV"><span class="list-text-color">Final Fantasy XIV</a></li>
+                        <li><a href="https://oldschool.runescape.com/" alt="Old School Runescape"><span class="list-text-color">Old School Runescape</a></li>
+                        <li><a href="https://tetris.com/play-tetris" alt="Tetris"><span class="list-text-color">Tetris</a></li>
+                        <li><a href="https://beatsaber.com/" alt="Beat Saber"><span class="list-text-color">Beat Saber</a></li>
+                        <li><a href="https://playvalorant.com/en-us/?gad_source=1&gclid=EAIaIQobChMIhqaxz8OIhgMVUc3CBB0-uQ0nEAAYASAAEgIhPfD_BwE&gclsrc=aw.ds" alt="Valorant"><span class="list-text-color">Valorant</a></li>
+                        <li><a href="https://www.leagueoflegends.com/en-us/" alt="League of Legends"><span class="list-text-color">League of Legends</a></li>
+                        <li><a href="https://overwatch.blizzard.com/en-us/" alt="Overwatch 2"><span class="list-text-color">Overwatch 2</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="width:500px; margin:auto; position:center;">
+                <audio controls style="width:100%;">
+                    <source src="./assets/Audio/flow-211881.mp3">This browser does not support the audio tag
+                </audio>
+            </div>
+            <div>
+                <table class="center">
+                    <caption class="caption">Most Played Games</caption>
+                    <tr>
+                        <th>Games</th>
+                        <th>Skill Level</th>
+                    </tr>
+                    <tr>
+                        <td>Apex</td>
+                        <td style="text-align: center;">Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>Call of Duty: Modern Warfare 2</td>
+                        <td style="text-align: center;">Beginner</td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fortnite</td>
+                        <td style="text-align: center;">Beginner</td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Halo 2</td>
+                        <td style="text-align: center;">Expert</td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>League of Legends</td>
+                        <td style="text-align: center;">Expert</td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Overwatch</td>
+                        <td style="text-align: center;">Expert</td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Valorant</td>
+                        <td style="text-align: center;">Intermediate</td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Super Smash Brothers</td>
+                        <td style="text-align: center;">Beginner</td>
+                        </td>
+                    </tr>
+                </table>
+        </div>
+        </section>
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col-lg-4 ms-auto"><p class="lead">The Grand Exchange is a website used to connect gamers to other people playing games.</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
+                </div>
+                <!-- About Section Button-->
+                <div class="text-center mt-4">
+                    <a class="btn btn-xl btn-outline-light" href="https://store.steampowered.com/">
+                        <i class="fas fa-download me-2"></i>
+                        Connect with Steam!
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Contact Section Form-->
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-7">
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                        <form id="contactForm" action="./php/formSubmit.php" onsubmit="return validateForm()" method="post">
+                            <!-- Radio buttons for Contact Section -->
+                            <div>
+                                <p><h5>Please indicate your gamer status:</h5>
+                                <input type="radio" id="noob" name="gamer type" value="noob" onchange="getRadioValue(this)">
+                                <label for="noob">Noob</label><br>
+                                <input type="radio" id="filthy casual" name="gamer type" value="filthy casual" onchange="getRadioValue(this)">
+                                <label for="filthy casual">Filthy Casual</label><br>
+                                <input type="radio" id="bronze" name="gamer type" value="bronze" onchange="getRadioValue(this)">
+                                <label for="bronze">Bronze</label><br>
+                                <input type="radio" id="silver" name="gamer type" value="silver" onchange="getRadioValue(this)">
+                                <label for="silver">Silver</label><br>
+                                <input type="radio" id="platinum" name="gamer type" value="platinum" onchange="getRadioValue(this)">
+                                <label for="platinum">Platinum</label><br>
+                                <input type="radio" id="grand master" name="gamer type" value="grand master" onchange="getRadioValue(this)">
+                                <label for="grand master">Grand Master</label><br>
+                            </div>
+                            <!-- Check boxes for games they  play -->
+                            <div>
+                                <p><h5>Please select the games you play:</h5>
+                                <input type="checkbox" id="Overwatch 2" name="Overwatch 2" value="Overwatch 2" onclick="getCheckboxClick(this)">
+                                <label for="Overwatch 2">Overwatch 2</label><br>
+                                <input type="checkbox" id="Valorant" name="Valorant" value="Valorant" onclick="getCheckboxClick(this)">
+                                <label for="Valorant">Valorant</label><br>
+                                <input type="checkbox" id="League of Legends" name="League of Legends" value="League of Legends" onclick="getCheckboxClick(this)">
+                                <label for="League of Legends">League of Legends</label><br>
+                                <input type="checkbox" id="Super Smash Brothers Ultimate" name="Super Smash Brothers Ultimate" value="Super Smash Brothers Ultimate" onclick="getCheckboxClick(this)">
+                                <label for="Super Smash Brothers Ultimate">Super Smash Brothers Ultimate</label><br>
+                            </div>
+                            <!-- Dropdown menu for competitive interest -->
+                                <p><h5>Please select a competitive interest:</h5>
+                                <label for="competitive interest"> Competitive Levels: </label>
+                                <select name="competitive interest" id="competitive interest" onchange="getMenuSelection(this)">
+                                    <option value="" selected>Select Competitive Interest</option>
+                                    <option value="No competitive interest">No competitive interest</option>
+                                    <option value="Locals legend">Locals legend</option>
+                                    <option value="Collegiate">Collegiate</option>
+                                    <option value="ESL Pro">ESL Pro</option>
+                                    <option value="Other">Other (enter interest)</option>
+                                </select>
+                                <input type="text" id="other competitive interest" onkeyup="getTextboxEntry(this)"/>
+                            </div>
+                            <!-- Name input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <label for="name">Full name</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            <!-- Email address input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <label for="email">Email address</label>
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            <!-- Phone number input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                <label for="phone">Phone number</label>
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            </div>
+                            <!-- Message input-->
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <label for="message">Message</label>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            </div>
+                            <!-- Submit success message-->
+                            <!---->
+                            <!-- This is what your users will see when the form-->
+                            <!-- has successfully submitted-->
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder">Form submission successful!</div>
+                                    To activate this form, sign up at
+                                    <br />
+                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                </div>
+                            </div>
+                            <!-- Submit error message-->
+                            <!---->
+                            <!-- This is what your users will see when there is-->
+                            <!-- an error submitting the form-->
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                            <!-- Submit Button-->
+                            <input type="submit" id="btn" class="submit_button" value="Send Email to Instructor">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Location</h4>
+                        <p class="lead mb-0">
+                            118 N. Main St.
+                            <br />
+                            Marysville, OH 43040
+                        </p>
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Around the Web</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F"><i class="fab fa-fw fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://x.com/?lang=en"><i class="fab fa-fw fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/jobs?src=go-pa&trk=sem-ga_campid.18853522261_asid.146084015209_crid.633923221414_kw.linkedin_d.c_tid.kwd-296170574619_n.g_mt.e_geo.2840&mcid=6994434350142418944&cid=&gad_source=1&gclid=EAIaIQobChMI54i-1KfShgMVWJNQBh23qgjNEAAYASAAEgJ0evD_BwE&gclsrc=aw.ds"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/"><i class="fab fa-fw fa-instagram"></i></a>
+                    </div>
+                    <!-- Footer About Text-->
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
+                        <p class="lead mb-0">
+                            Freelance is a free to use, MIT licensed Bootstrap theme created by Alex Crider, 06/2024
+                            <a href="http://startbootstrap.com">Start Bootstrap</a>
+                            .
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright &copy; Your Website 2023</small></div>
+        </div>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Switch</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="C:\Users\Administrator\Desktop\MyWork\CIS373_WebDeveloper\startbootstrap_freelancer_gh_pages\assets\img\portfolio\1.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">The Nintendo Switch is one of the most beloved handheld consoles.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">XBox Buttons</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="C:\Users\Administrator\Desktop\MyWork\CIS373_WebDeveloper\startbootstrap_freelancer_gh_pages\assets\img\portfolio\2.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">XBox is pretty cool. For a Microsoft product.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Computer</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="C:\Users\Administrator\Desktop\MyWork\CIS373_WebDeveloper\startbootstrap_freelancer_gh_pages\assets\img\portfolio\3.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">PC is the best way to play games. Always will be.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="C:\Users\Administrator\Desktop\MyWork\CIS373_WebDeveloper\startbootstrap_freelancer_gh_pages\assets\img\portfolio\4.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">This is a nice image of a wired contoller.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 5-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">GameBoy</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="C:\Users\Administrator\Desktop\MyWork\CIS373_WebDeveloper\startbootstrap_freelancer_gh_pages\assets\img\portfolio\5.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">GameBoy changed my life.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 6-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Game Over</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="C:\Users\Administrator\Desktop\MyWork\CIS373_WebDeveloper\startbootstrap_freelancer_gh_pages\assets\img\portfolio\6.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">The most painful two words in all of video gaming.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
